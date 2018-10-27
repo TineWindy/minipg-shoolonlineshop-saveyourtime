@@ -1,0 +1,7 @@
+com\cherry\cherryshop\controller\CommodityController.class
+com\cherry\cherryshop\controller\WelcomeController.class
+com\cherry\cherryshop\dao\CommodityMapper.class
+com\cherry\cherryshop\CherryshopApplication.class
+com\cherry\cherryshop\entity\Commodity.class
+com\cherry\cherryshop\entity\Result.class
+com\cherry\cherryshop\service\CommodityService.class
