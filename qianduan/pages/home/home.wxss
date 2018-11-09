@@ -1,0 +1,23 @@
+/* miniprogram/pages/home/home.wxss */
+.commodity_card{
+  padding: 20rpx;
+}
+
+.small_text{
+  font-size: 25rpx;
+}
+.price_text{
+  color: #d13f63;
+}
+
+.image {
+	width: 97% !important;
+	height: auto !important;
+	padding-bottom: 100% !important;
+  padding-left: 100px;
+}
+
+.user_info{
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+}

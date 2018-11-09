@@ -1,0 +1,12 @@
+.message{
+  margin-top:30rpx;
+  margin-left: 20rpx;
+}
+
+.message-text{
+  font-size: 26rpx;
+}
+
+.message-time{
+  font-size: 23rpx;
+}

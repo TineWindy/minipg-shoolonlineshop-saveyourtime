@@ -1,0 +1,101 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+         <!--
+          navbar控件
+          tabs存navbar显示的item
+         -->
+            <view class="weui-navbar">
+                <block wx:for-items="{{ tabs}}" wx:key="{{ index }}">
+                    <view data-id="{{ index }}" class="weui-navbar__item {{ activeIndex == index ? 'weui-bar__item_on' : '' }}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{ item }}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{ sliderLeft }}px; transform: translateX({{ sliderOffset }}px); -webkit-transform: translateX({{ sliderOffset }}px);"></view>
+            </view>
+
+
+            <!-- 注意这里使用hidden，必要时候可调整-->
+            <view class="weui-tab__panel">
+
+              <block wx:if="{{ activeIndex === 0 }}">
+                <view class="weui-tab__content page_bd" >
+                
+                  <!-- 商品信息卡片 -->
+                  <view class="commodity_card">
+                    <wux-row >
+                      <wux-col span="2">
+                        <wux-avatar body-style="background-color: #33cd5f" size="large">U</wux-avatar>
+                      </wux-col>
+                      <wux-col span="10">
+                        <wux-row>
+                          <wux-col span="10">
+                            黄星宇
+                          </wux-col>
+                        </wux-row>
+                        <wux-row class="small_text">
+                          <wux-col span="3" >
+                            信息学部7舍
+                          </wux-col>
+                          <wux-col span="1" class="small_text">
+                            |
+                          </wux-col>
+                          <wux-col span="6" >
+                            嘟嘟快递
+                          </wux-col>
+                        </wux-row>
+                      </wux-col>
+                    </wux-row>
+
+                    <view class="user_info">
+                    <wux-row >
+                      <wux-col span="4" >
+                          <wux-image wux-class="image"  src="../../imgs/test.jpg" />
+                      </wux-col>
+                      <wux-col span="4" >
+                          <wux-image wux-class="image" src="../../imgs/test.jpg" />
+                      </wux-col>
+                      <wux-col span="4" >
+                          <wux-image wux-class="image" src="../../imgs/test.jpg" />
+                      </wux-col>                  
+                    </wux-row>
+                    </view>
+                    
+
+                    <wux-row>
+                      <wux-col span="3">
+                        摄影写真
+                      </wux-col>
+                      <wux-col class="price_text" span="9">
+                        ￥200
+                      </wux-col>
+                    </wux-row>
+
+                    <wux-row>
+                      <wux-col span="12" class="small_text">
+                        52hz给你最好的写真体验，快来联系我们吧。
+                      </wux-col>
+                    </wux-row>
+                    <wux-divider show-text="{{ false }}" />
+                  </view>
+                <!-- 完-商品信息卡片 -->
+                </view>
+              </block>
+              <block wx:if="{{ activeIndex === 1 }}">
+                <view class="weui-tab__content" >
+                    
+                </view>
+              </block>
+              <block wx:if="{{ activeIndex === 2 }}">
+                <view class="weui-tab__content" >
+                    <wux-search-bar focus bindconfirm="getdata"/>
+                </view>
+              </block>
+                <view class="weui-tab__content" hidden="{{ activeIndex !== 2 }}">
+                    <!-- <wux-prompt visible="{{ activeIndex === 2 }}" icon="{{ msg3.icon }}" title="{{ msg3.title }}" /> -->
+                    <!-- <wux-serch-bar focus /> -->
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

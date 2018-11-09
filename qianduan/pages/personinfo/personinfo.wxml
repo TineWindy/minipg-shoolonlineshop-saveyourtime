@@ -1,0 +1,31 @@
+  <view class="userinfo weui-position2">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+
+  <view>
+  <form bindsubmit='infoSubmit'>
+    <view class="text_input">
+      <input placeholder='真实姓名' type='text' disabled="{{disabled}}" focus="{{focus}}" value="{{info.name}}" name="name">{{info.name}}</input>
+      <wux-divider show-text="{{ false }}" />
+    </view>
+    <view class="text_input">
+      <input placeholder='学号' type='text' disabled="{{disabled}}" value="{{info.studentid}}" name="studentid"></input>
+      <wux-divider show-text="{{ false }}" />
+    </view>
+    <view class="text_input">
+      <input placeholder='宿舍' type='text' disabled="{{disabled}}" value="{{info.dorm}}" name="dormitory"></input>
+      <wux-divider show-text="{{ false }}" />
+    </view>
+    <view class="text_input">
+      <input placeholder='电话号码' type='text' disabled="{{disabled}}" value="{{info.phone}}" name="phone"></input>
+      <wux-divider show-text="{{ false }}" />
+    </view>
+    <view class="button_input ">
+      <wux-button  block outline type="calm" class='btn' bindtap='changedisabled'>修改</wux-button>
+      <button form-type='submit' plain='{{true}}'><wux-button  block outline type="dark" class='btn' >确认</wux-button></button>
+      <!-- <button form-type='submit'>确认</button> -->
+    </view>
+  </form>
+  </view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents" : {
+    "wux-divider": "../../dist/divider/index",
+    "wux-button": "../../dist/button/index"
+  }
+}

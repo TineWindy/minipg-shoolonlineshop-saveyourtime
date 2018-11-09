@@ -1,0 +1,61 @@
+<view class="message">
+
+  <wux-row>
+    <view class="ava_msg touxiang">
+    <wux-col span="2" >
+      <view class="ava_msg">
+      <wux-badge count="3" style="height:320rpx;">
+      <wux-avatar body-style="background-color: #33cd5f" size="large">U</wux-avatar>
+      </wux-badge>
+      </view>
+    </wux-col>
+    </view>
+    <wux-col span="10">
+      <wux-row>
+        <wux-col span="8">
+          拾樱小管家
+        </wux-col>
+        <wux-col span="2" class="message-time">
+          3:50pm
+        </wux-col>
+      </wux-row>
+      <wux-row>
+        <wux-col span="10" class="message-text">
+          你好啊，我是小管家，对“拾樱铺”有……
+        </wux-col>
+      </wux-row>
+    </wux-col>
+  </wux-row>
+  <wux-divider show-text="{{ false }}" />
+</view>
+
+<view class="message">
+
+  <wux-row>
+    <view class="ava_msg touxiang">
+    <wux-col span="2" >
+      <view class="ava_msg">
+      <wux-badge count="3" style="height:320rpx;">
+      <wux-avatar body-style="background-color: #33cd5f" size="large">U</wux-avatar>
+      </wux-badge>
+      </view>
+    </wux-col>
+    </view>
+    <wux-col span="10">
+      <wux-row>
+        <wux-col span="8">
+          拾樱小管家
+        </wux-col>
+        <wux-col span="2" class="message-time">
+          3:50pm
+        </wux-col>
+      </wux-row>
+      <wux-row>
+        <wux-col span="10" class="message-text">
+          你好啊，我是小管家，对“拾樱铺”有……
+        </wux-col>
+      </wux-row>
+    </wux-col>
+  </wux-row>
+  <wux-divider show-text="{{ false }}" />
+</view>

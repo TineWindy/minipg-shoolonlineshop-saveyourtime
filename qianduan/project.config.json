@@ -1,0 +1,52 @@
+{
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wx7b749e5501d908b3",
+	"projectname": "seeyourtime",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "personinfo",
+					"pathName": "pages/personinfo/personinfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mes",
+					"pathName": "pages/msg/msg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "create",
+					"pathName": "pages/commodity/commodity"
+				}
+			]
+		}
+	}
+}

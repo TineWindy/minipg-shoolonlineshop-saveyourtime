@@ -1,0 +1,47 @@
+<view>
+  <form>
+
+
+    <!-- <input slot="footer" class="text-input"></input> -->
+    <wux-cell-group title="商品基本信息">
+      <wux-cell title="name" hover-class="none">
+        <input slot="footer" class="text-input"></input>
+      </wux-cell>
+      <wux-cell title="price" hover-class="none">
+        <input slot="footer" class="text-input"></input>
+      </wux-cell>
+    </wux-cell-group>
+
+    <wux-cell-group title="描述">
+      <wux-cell title="" hover-class="none">
+        <input placeholder='Description...' class="des-input"></input>
+      </wux-cell>
+    </wux-cell-group>
+
+     <wux-cell-group title="标签">
+      <block wx:if="{{tagHide}}">
+        <wux-cell title="" hover-class="none">
+          <wux-checkbox-group name="a" value="{{ value1 }}" title="" bind:change="onChange1">
+            <wux-checkbox color="light" title="二手书籍" value="1" />
+            <wux-checkbox color="stable" title="生活用品" value="2" />
+            <wux-checkbox color="positive" title="零食饮料" value="3" />
+            <wux-checkbox color="calm" title="化妆品" value="4" />
+            <wux-checkbox color="balanced" title="电子产品" value="5" />
+            <wux-checkbox color="energized" title="虚拟物品" value="6" />
+                <!-- <wux-checkbox color="assertive" title="Assertive" value="7" />
+                <wux-checkbox color="royal" title="Royal" value="8" />
+                <wux-checkbox color="dark" title="Dark" value="9" /> -->
+          </wux-checkbox-group>
+        </wux-cell>
+      </block>
+      <wux-cell title="" hover-class="none">
+        <view class="tagButton">
+          <wux-button outline type="calm" size='small' bindtap='hide'>
+            {{tagButton}}
+          </wux-button></view>
+      </wux-cell>
+      </wux-cell-group>
+
+
+  </form>
+</view>

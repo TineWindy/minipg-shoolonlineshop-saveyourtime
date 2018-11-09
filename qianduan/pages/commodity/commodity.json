@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "wux-cell-group": "../../dist/cell-group/index",
+    "wux-cell": "../../dist/cell/index",
+    "wux-accordion-group": "../../dist/accordion-group/index",
+    "wux-accordion": "../../dist/accordion/index",
+    "wux-checkbox-group": "../../dist/checkbox-group/index",
+    "wux-checkbox": "../../dist/checkbox/index",
+    "wux-divider": "../../dist/divider/index",
+    "wux-button": "../../dist/button/index"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/sale/sale",
+    "pages/msg/msg",
+    "pages/tags/tags",
+    "pages/me/me",
+    "pages/personinfo/personinfo",
+    "pages/commodity/commodity"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e59fb1",
+    "navigationBarTitleText": "拾樱铺",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#e59fb1",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "imgs/home1.png",
+        "selectedIconPath": "imgs/home2.png"
+      },
+      {
+        "pagePath": "pages/tags/tags",
+        "text": "分类",
+        "iconPath": "imgs/tag1.png",
+        "selectedIconPath": "imgs/tag2.png"
+      },
+      {
+        "pagePath": "pages/commodity/commodity",
+        "text": "发布",
+        "iconPath": "imgs/plus1.png",
+        "selectedIconPath": "imgs/plus2.png"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "text": "消息",
+        "iconPath": "imgs/msg1.png",
+        "selectedIconPath": "imgs/msg2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "imgs/me1.png",
+        "selectedIconPath": "imgs/me2.png"
+      }
+    ]
+  }
+}
