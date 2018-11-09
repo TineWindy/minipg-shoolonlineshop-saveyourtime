@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wx.sakura.dao.UserMapper">
+  <select id="queryAllUser"  resultType="com.wx.sakura.entity.User">
+    select wxid, openid, name, studentid, dormitory, phone
+    from user
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultType="com.wx.sakura.entity.User">
+    select wxid, openid, name, studentid, dormitory, phone
+    from user
+    where wxid = #{wxid}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete
+    from user
+    where wxid = #{wxid,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insert" parameterType="com.wx.sakura.entity.User" useGeneratedKeys="true" keyProperty="wxid">
+    insert into user (openid)
+    values (#{openid,jdbcType=VARCHAR})
+  </insert>
+
+  <update id="updateByPrimaryKey" parameterType="com.wx.sakura.entity.User">
+    update user
+    set name = #{name,jdbcType=VARCHAR},
+      studentid = #{studentid,jdbcType=CHAR},
+      dormitory = #{dormitory,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR}
+    where wxid = #{wxid,jdbcType=INTEGER}
+  </update>
+
+</mapper>

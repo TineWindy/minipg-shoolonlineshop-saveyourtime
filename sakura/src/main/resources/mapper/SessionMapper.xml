@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wx.sakura.dao.SessionMapper" >
+
+    <select id="queryAllUser"  resultType="com.wx.sakura.entity.Session">
+    select wxid, openid, session
+    from session_info
+  </select>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultType="com.wx.sakura.entity.Session">
+    select wxid, openid, session
+    from session_info
+    where wxid = #{wxid}
+  </select>
+
+    <select id="selectByOpenid" parameterType="java.lang.String" resultType="com.wx.sakura.entity.Session">
+    select *
+    from session_info
+    where openid = #{openid}
+  </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete
+    from session_info
+    where wxid = #{wxid,jdbcType=INTEGER}
+  </delete>
+
+    <insert id="insert" parameterType="com.wx.sakura.entity.Session" useGeneratedKeys="true" keyProperty="wxid">
+    insert
+    into session_info
+    values (#{wxid,jdbcType=VARCHAR},#{session,jdbcType=VARCHAR},#{openid,jdbcType=VARCHAR})
+  </insert>
+
+    <update id="updateSessionByPrimaryKey" parameterType="com.wx.sakura.entity.Session">
+    update session_info
+    set session = #{session,jdbcType=CHAR}
+    where wxid = #{wxid,jdbcType=INTEGER}
+  </update>
+
+</mapper>
